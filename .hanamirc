@@ -1,0 +1,3 @@
+project=meetups
+test=minitest
+template=erb
