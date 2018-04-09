@@ -5,7 +5,7 @@ require_relative '../lib/meetups'
 require_relative '../apps/api/application'
 
 Hanami.configure do
-  mount Api::Application, at: '/'
+  mount Api::Application, at: '/api/v1'
 
   model do
     ##

@@ -6,6 +6,8 @@ gem 'hanami-model', '~> 1.1'
 
 gem 'sqlite3'
 
+gem 'graphql'
+
 group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading
@@ -14,6 +16,7 @@ end
 
 group :test, :development do
   gem 'dotenv', '~> 2.0'
+  gem 'pry'
 end
 
 group :test do
