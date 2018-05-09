@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Graphiql</title>
+    <%= favicon %>
+    <%= stylesheet 'graphiql', 'application' %>
+  </head>
+
+  <body>
+    <div id="graphiql">Loading...</div>
+    <%= javascript 'react.production.min', 'react-dom.production.min', 'fetch',
+                   'es6-promise.auto.min', 'graphiql', 'application' %>
+  </body>
+</html>

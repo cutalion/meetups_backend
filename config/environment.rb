@@ -2,9 +2,11 @@ require 'bundler/setup'
 require 'hanami/setup'
 require 'hanami/model'
 require_relative '../lib/meetups'
+require_relative '../apps/graphiql/application'
 require_relative '../apps/api/application'
 
 Hanami.configure do
+  mount Graphiql::Application, at: '/graphiql'
   mount Api::Application, at: '/api/v1'
 
   model do
