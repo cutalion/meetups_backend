@@ -4,7 +4,7 @@ gem 'rake'
 gem 'hanami',       '~> 1.1'
 gem 'hanami-model', '~> 1.1'
 
-gem 'sqlite3'
+gem 'pg'
 
 gem 'graphql'
 gem 'rack-cors', require: 'rack/cors'

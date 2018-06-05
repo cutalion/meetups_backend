@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+  backend:
+    image: meetups
+    build: .
+    ports:
+      - 2300:2300
+    environment:
+      DATABASE_URL: postgresql://postgres@db/meetups_development
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - db
+    command: bundle exec hanami s -p 2300 --host 0.0.0.0
+
+  db:
+    image: postgres:10.4
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
