@@ -7,6 +7,7 @@ gem 'hanami-model', '~> 1.1'
 gem 'sqlite3'
 
 gem 'graphql'
+gem 'rack-cors', require: 'rack/cors'
 
 group :development do
   # Code reloading

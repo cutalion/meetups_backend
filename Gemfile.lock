@@ -114,6 +114,7 @@ GEM
       method_source (~> 0.9.0)
     public_suffix (3.0.2)
     rack (2.0.4)
+    rack-cors (1.0.2)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
     rake (12.3.1)
@@ -161,6 +162,7 @@ DEPENDENCIES
   hanami-model (~> 1.1)
   minitest
   pry
+  rack-cors
   rake
   shotgun
   sqlite3
