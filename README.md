@@ -1,33 +1,30 @@
-# Meetups
+This is a pet project of mine (@cutalion).
+Here I'm learning how to build and deploy ruby application with docker.
+I also learning hanami framework and graphql.
 
-Welcome to your new Hanami project!
+There is also a frontend part of it, single page application on react
+with server-side rendering.
+https://github.com/cutalion/meetups_frontend
 
-## Setup
+## Installation
 
-How to run tests:
+### Easy way
 
-```
-% bundle exec rake
-```
+Just run `docker-compose up -d` (assuming you've installed docker and docker-compose).
+Prepare databse with `docker-compose run backend bundle exec hanami db prepare`.
 
-How to run the development console:
+### Traditional way
 
-```
-% bundle exec hanami console
-```
+`bundle install`
+`bundle exec hanami db prepare`
+`bundle exec hanami s`
 
-How to run the development server:
+You may want to edit `.env.development` to set the `DATABASE_URL` (postgres).
 
-```
-% bundle exec hanami server
-```
+## GraphiQL
 
-How to prepare (create and migrate) DB for `development` and `test` environments:
+Open http://localhost:2300/graphiql
 
-```
-% bundle exec hanami db prepare
+## Frontend
 
-% HANAMI_ENV=test bundle exec hanami db prepare
-```
-
-Explore Hanami [guides](http://hanamirb.org/guides/), [API docs](http://docs.hanamirb.org/1.1.1/), or jump in [chat](http://chat.hanamirb.org) for help. Enjoy! 🌸
+See https://github.com/cutalion/meetups_frontend#installation
